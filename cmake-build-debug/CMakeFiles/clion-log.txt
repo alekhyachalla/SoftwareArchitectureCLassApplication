@@ -1,0 +1,311 @@
+/root/clion-2022.1/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/root/clion-2022.1/bin/ninja/linux/ninja -G Ninja -S /root/CLionProjects/SoftwareArchitectureCLassApplication -B /root/CLionProjects/SoftwareArchitectureCLassApplication/cmake-build-debug
+-- The CXX compiler identification is GNU 9.4.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+x64 architecture in use
+CMake Warning at CMakeLists.txt:61 (message):
+  No implementation of use_package.  Create yours.  Package "boost" with
+  version "1.78.0" for target "AppFeatureOps" is ignored!
+Call Stack (most recent call first):
+  AppLibrary/CMakeLists.txt:121 (use_package)
+
+
+CMake Warning at CMakeLists.txt:61 (message):
+  No implementation of use_package.  Create yours.  Package
+  "boost_locale-vc143" with version "1.78.0" for target "AppFeatureOps" is
+  ignored!
+Call Stack (most recent call first):
+  AppLibrary/CMakeLists.txt:122 (use_package)
+
+
+CMake Warning at CMakeLists.txt:61 (message):
+  No implementation of use_package.  Create yours.  Package "boost" with
+  version "1.78.0" for target "AppPartOps" is ignored!
+Call Stack (most recent call first):
+  AppPartOps/CMakeLists.txt:113 (use_package)
+
+
+CMake Warning at CMakeLists.txt:61 (message):
+  No implementation of use_package.  Create yours.  Package
+  "boost_locale-vc143" with version "1.78.0" for target "AppPartOps" is
+  ignored!
+Call Stack (most recent call first):
+  AppPartOps/CMakeLists.txt:114 (use_package)
+
+
+CMake Warning at CMakeLists.txt:61 (message):
+  No implementation of use_package.  Create yours.  Package "boost" with
+  version "1.78.0" for target "AutomationBinding" is ignored!
+Call Stack (most recent call first):
+  AutomationBinding/CMakeLists.txt:131 (use_package)
+
+
+CMake Warning at CMakeLists.txt:61 (message):
+  No implementation of use_package.  Create yours.  Package
+  "boost_locale-vc143" with version "1.78.0" for target "AutomationBinding"
+  is ignored!
+Call Stack (most recent call first):
+  AutomationBinding/CMakeLists.txt:132 (use_package)
+
+
+CMake Warning at CMakeLists.txt:61 (message):
+  No implementation of use_package.  Create yours.  Package "boost" with
+  version "1.78.0" for target "MainExe" is ignored!
+Call Stack (most recent call first):
+  BadLibrariesExe/CMakeLists.txt:89 (use_package)
+
+
+CMake Warning at CMakeLists.txt:61 (message):
+  No implementation of use_package.  Create yours.  Package
+  "boost_locale-vc143" with version "1.78.0" for target "MainExe" is ignored!
+Call Stack (most recent call first):
+  BadLibrariesExe/CMakeLists.txt:90 (use_package)
+
+
+CMake Warning at CMakeLists.txt:61 (message):
+  No implementation of use_package.  Create yours.  Package "boost" with
+  version "1.78.0" for target "CoolDemandLoadedLibrary" is ignored!
+Call Stack (most recent call first):
+  CoolDemandLoadedLibrary/CMakeLists.txt:111 (use_package)
+
+
+CMake Warning at CMakeLists.txt:61 (message):
+  No implementation of use_package.  Create yours.  Package
+  "boost_locale-vc143" with version "1.78.0" for target
+  "CoolDemandLoadedLibrary" is ignored!
+Call Stack (most recent call first):
+  CoolDemandLoadedLibrary/CMakeLists.txt:112 (use_package)
+
+
+CMake Warning at CMakeLists.txt:61 (message):
+  No implementation of use_package.  Create yours.  Package "boost" with
+  version "1.78.0" for target "Core" is ignored!
+Call Stack (most recent call first):
+  Core/CMakeLists.txt:117 (use_package)
+
+
+CMake Warning at CMakeLists.txt:61 (message):
+  No implementation of use_package.  Create yours.  Package
+  "boost_locale-vc143" with version "1.78.0" for target "Core" is ignored!
+Call Stack (most recent call first):
+  Core/CMakeLists.txt:118 (use_package)
+
+
+CMake Error at CoreUnitTest/CMakeLists.txt:26 (target_precompile_headers):
+  Cannot specify precompile headers for target "CoreUnitTest" which is not
+  built by this project.
+
+
+CMake Error at CMake/Default.cmake:49 (set_target_properties):
+  set_target_properties Can not find target to add properties to:
+  CoreUnitTest
+Call Stack (most recent call first):
+  CMake/Default.cmake:57 (set_config_specific_property)
+  CMake/DefaultCXX.cmake:1 (include)
+  CMake/Utils.cmake:200 (include)
+  CoreUnitTest/CMakeLists.txt:30 (use_props)
+
+
+CMake Error at CMake/Default.cmake:49 (set_target_properties):
+  set_target_properties Can not find target to add properties to:
+  CoreUnitTest
+Call Stack (most recent call first):
+  CMake/Default.cmake:58 (set_config_specific_property)
+  CMake/DefaultCXX.cmake:1 (include)
+  CMake/Utils.cmake:200 (include)
+  CoreUnitTest/CMakeLists.txt:30 (use_props)
+
+
+CMake Error at CMake/Default.cmake:49 (set_target_properties):
+  set_target_properties Can not find target to add properties to:
+  CoreUnitTest
+Call Stack (most recent call first):
+  CMake/Default.cmake:59 (set_config_specific_property)
+  CMake/DefaultCXX.cmake:1 (include)
+  CMake/Utils.cmake:200 (include)
+  CoreUnitTest/CMakeLists.txt:30 (use_props)
+
+
+CMake Error at CMake/Default.cmake:49 (set_target_properties):
+  set_target_properties Can not find target to add properties to:
+  CoreUnitTest
+Call Stack (most recent call first):
+  CMake/Default.cmake:60 (set_config_specific_property)
+  CMake/DefaultCXX.cmake:1 (include)
+  CMake/Utils.cmake:200 (include)
+  CoreUnitTest/CMakeLists.txt:30 (use_props)
+
+
+CMake Error at CMake/Default.cmake:49 (set_target_properties):
+  set_target_properties Can not find target to add properties to:
+  CoreUnitTest
+Call Stack (most recent call first):
+  CMake/Default.cmake:61 (set_config_specific_property)
+  CMake/DefaultCXX.cmake:1 (include)
+  CMake/Utils.cmake:200 (include)
+  CoreUnitTest/CMakeLists.txt:30 (use_props)
+
+
+CMake Error at CMake/Default.cmake:49 (set_target_properties):
+  set_target_properties Can not find target to add properties to:
+  CoreUnitTest
+Call Stack (most recent call first):
+  CMake/Default.cmake:63 (set_config_specific_property)
+  CMake/DefaultCXX.cmake:1 (include)
+  CMake/Utils.cmake:200 (include)
+  CoreUnitTest/CMakeLists.txt:30 (use_props)
+
+
+CMake Error at CMake/Default.cmake:49 (set_target_properties):
+  set_target_properties Can not find target to add properties to:
+  CoreUnitTest
+Call Stack (most recent call first):
+  CMake/Default.cmake:64 (set_config_specific_property)
+  CMake/DefaultCXX.cmake:1 (include)
+  CMake/Utils.cmake:200 (include)
+  CoreUnitTest/CMakeLists.txt:30 (use_props)
+
+
+CMake Error at CMake/Default.cmake:49 (set_target_properties):
+  set_target_properties Can not find target to add properties to:
+  CoreUnitTest
+Call Stack (most recent call first):
+  CMake/Default.cmake:65 (set_config_specific_property)
+  CMake/DefaultCXX.cmake:1 (include)
+  CMake/Utils.cmake:200 (include)
+  CoreUnitTest/CMakeLists.txt:30 (use_props)
+
+
+CMake Error at CMake/Default.cmake:49 (set_target_properties):
+  set_target_properties Can not find target to add properties to:
+  CoreUnitTest
+Call Stack (most recent call first):
+  CMake/DefaultCXX.cmake:3 (set_config_specific_property)
+  CMake/Utils.cmake:200 (include)
+  CoreUnitTest/CMakeLists.txt:30 (use_props)
+
+
+CMake Error at CMake/Default.cmake:49 (set_target_properties):
+  set_target_properties Can not find target to add properties to:
+  CoreUnitTest
+Call Stack (most recent call first):
+  CMake/Default.cmake:57 (set_config_specific_property)
+  CMake/DefaultCXX.cmake:1 (include)
+  CMake/Utils.cmake:200 (include)
+  CoreUnitTest/CMakeLists.txt:30 (use_props)
+
+
+CMake Error at CMake/Default.cmake:49 (set_target_properties):
+  set_target_properties Can not find target to add properties to:
+  CoreUnitTest
+Call Stack (most recent call first):
+  CMake/Default.cmake:58 (set_config_specific_property)
+  CMake/DefaultCXX.cmake:1 (include)
+  CMake/Utils.cmake:200 (include)
+  CoreUnitTest/CMakeLists.txt:30 (use_props)
+
+
+CMake Error at CMake/Default.cmake:49 (set_target_properties):
+  set_target_properties Can not find target to add properties to:
+  CoreUnitTest
+Call Stack (most recent call first):
+  CMake/Default.cmake:59 (set_config_specific_property)
+  CMake/DefaultCXX.cmake:1 (include)
+  CMake/Utils.cmake:200 (include)
+  CoreUnitTest/CMakeLists.txt:30 (use_props)
+
+
+CMake Error at CMake/Default.cmake:49 (set_target_properties):
+  set_target_properties Can not find target to add properties to:
+  CoreUnitTest
+Call Stack (most recent call first):
+  CMake/Default.cmake:60 (set_config_specific_property)
+  CMake/DefaultCXX.cmake:1 (include)
+  CMake/Utils.cmake:200 (include)
+  CoreUnitTest/CMakeLists.txt:30 (use_props)
+
+
+CMake Error at CMake/Default.cmake:49 (set_target_properties):
+  set_target_properties Can not find target to add properties to:
+  CoreUnitTest
+Call Stack (most recent call first):
+  CMake/Default.cmake:61 (set_config_specific_property)
+  CMake/DefaultCXX.cmake:1 (include)
+  CMake/Utils.cmake:200 (include)
+  CoreUnitTest/CMakeLists.txt:30 (use_props)
+
+
+CMake Error at CMake/Default.cmake:49 (set_target_properties):
+  set_target_properties Can not find target to add properties to:
+  CoreUnitTest
+Call Stack (most recent call first):
+  CMake/Default.cmake:63 (set_config_specific_property)
+  CMake/DefaultCXX.cmake:1 (include)
+  CMake/Utils.cmake:200 (include)
+  CoreUnitTest/CMakeLists.txt:30 (use_props)
+
+
+CMake Error at CMake/Default.cmake:49 (set_target_properties):
+  set_target_properties Can not find target to add properties to:
+  CoreUnitTest
+Call Stack (most recent call first):
+  CMake/Default.cmake:64 (set_config_specific_property)
+  CMake/DefaultCXX.cmake:1 (include)
+  CMake/Utils.cmake:200 (include)
+  CoreUnitTest/CMakeLists.txt:30 (use_props)
+
+
+CMake Error at CMake/Default.cmake:49 (set_target_properties):
+  set_target_properties Can not find target to add properties to:
+  CoreUnitTest
+Call Stack (most recent call first):
+  CMake/Default.cmake:65 (set_config_specific_property)
+  CMake/DefaultCXX.cmake:1 (include)
+  CMake/Utils.cmake:200 (include)
+  CoreUnitTest/CMakeLists.txt:30 (use_props)
+
+
+CMake Error at CMake/Default.cmake:49 (set_target_properties):
+  set_target_properties Can not find target to add properties to:
+  CoreUnitTest
+Call Stack (most recent call first):
+  CMake/DefaultCXX.cmake:3 (set_config_specific_property)
+  CMake/Utils.cmake:200 (include)
+  CoreUnitTest/CMakeLists.txt:30 (use_props)
+
+
+CMake Error at CoreUnitTest/CMakeLists.txt:31 (set_target_properties):
+  set_target_properties Can not find target to add properties to:
+  CoreUnitTest
+
+
+CMake Error at CoreUnitTest/CMakeLists.txt:37 (get_property):
+  get_property could not find TARGET CoreUnitTest.  Perhaps it has not yet
+  been created.
+
+
+CMake Error at CoreUnitTest/CMakeLists.txt:47 (set_target_properties):
+  set_target_properties Can not find target to add properties to:
+  CoreUnitTest
+
+
+CMake Error at CoreUnitTest/CMakeLists.txt:52 (target_compile_definitions):
+  Cannot specify compile definitions for target "CoreUnitTest" which is not
+  built by this project.
+
+
+CMake Error at CoreUnitTest/CMakeLists.txt:56 (target_compile_definitions):
+  Cannot specify compile definitions for target "CoreUnitTest" which is not
+  built by this project.
+
+
+CMake Error at CoreUnitTest/CMakeLists.txt:97 (target_link_libraries):
+  Cannot specify link libraries for target "CoreUnitTest" which is not built
+  by this project.
+
+
+-- Configuring incomplete, errors occurred!
+See also "/root/CLionProjects/SoftwareArchitectureCLassApplication/cmake-build-debug/CMakeFiles/CMakeOutput.log".
