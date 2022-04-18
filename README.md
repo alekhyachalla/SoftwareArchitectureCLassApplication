@@ -18,7 +18,7 @@ Or optionally comment out the code in PerformJavaAutomationWorkflow, and turn of
 
 ----------------------------------------------------------------------------------------------------------
 
-Refer to the Wiki Pages for the FinalProject Documentation
+Refer the Wiki Pages for the FinalProject Documentation
 
 https://github.com/alekhyachalla/SoftwareArchitectureCLassApplication/wiki/FinalProject-PT1
 
