@@ -1,46 +1,70 @@
-set(PROJECT_NAME MainExe)
+set(PROJECT_NAME SAtests)
 
 ################################################################################
 # Source groups
 ################################################################################
-set(Header_Files
-    "UI.h"
+set(Headers
+    "pch.h"
 )
-source_group("Header Files" FILES ${Header_Files})
+source_group("Headers" FILES ${Headers})
 
-set(Source_Files
-    "MainExe.cpp"
+set(Sources
+    "pch.cpp"
+    "test.cpp"
 )
-source_group("Source Files" FILES ${Source_Files})
+source_group("Sources" FILES ${Sources})
 
 set(ALL_FILES
-    ${Header_Files}
-    ${Source_Files}
+    ${Headers}
+    ${Sources}
 )
 
 ################################################################################
 # Target
 ################################################################################
-add_executable(${PROJECT_NAME} ${ALL_FILES})
+
+target_precompile_headers(${PROJECT_NAME} PRIVATE
+    "$<$<COMPILE_LANGUAGE:CXX>:${CMAKE_CURRENT_SOURCE_DIR}/pch.h>"
+)
 
 use_props(${PROJECT_NAME} "${CMAKE_CONFIGURATION_TYPES}" "${DEFAULT_CXX_PROPS}")
-set(ROOT_NAMESPACE BadLibrariesExe)
-
 set_target_properties(${PROJECT_NAME} PROPERTIES
     VS_GLOBAL_KEYWORD "Win32Proj"
 )
+################################################################################
+# MSVC runtime library
+################################################################################
+get_property(MSVC_RUNTIME_LIBRARY_DEFAULT TARGET ${PROJECT_NAME} PROPERTY MSVC_RUNTIME_LIBRARY)
 if("${CMAKE_VS_PLATFORM_NAME}" STREQUAL "x64")
-    set_target_properties(${PROJECT_NAME} PROPERTIES
-        INTERPROCEDURAL_OPTIMIZATION_RELEASE "TRUE"
+    string(CONCAT "MSVC_RUNTIME_LIBRARY_STR"
+        $<$<CONFIG:Debug>:
+            MultiThreadedDebugDLL
+        >
+        $<$<CONFIG:Release>:
+            MultiThreadedDLL
+        >
+        $<$<NOT:$<OR:$<CONFIG:Debug>,$<CONFIG:Release>>>:${MSVC_RUNTIME_LIBRARY_DEFAULT}>
     )
 elseif("${CMAKE_VS_PLATFORM_NAME}" STREQUAL "x86")
-    set_target_properties(${PROJECT_NAME} PROPERTIES
-        INTERPROCEDURAL_OPTIMIZATION_RELEASE "TRUE"
+    string(CONCAT "MSVC_RUNTIME_LIBRARY_STR"
+        $<$<CONFIG:Debug>:
+            MultiThreadedDebugDLL
+        >
+        $<$<CONFIG:Release>:
+            MultiThreadedDLL
+        >
+        $<$<NOT:$<OR:$<CONFIG:Debug>,$<CONFIG:Release>>>:${MSVC_RUNTIME_LIBRARY_DEFAULT}>
     )
 endif()
+set_target_properties(${PROJECT_NAME} PROPERTIES MSVC_RUNTIME_LIBRARY ${MSVC_RUNTIME_LIBRARY_STR})
+
 ################################################################################
 # Compile definitions
 ################################################################################
+target_compile_definitions(${PROJECT_NAME} PRIVATE
+    "UNICODE;"
+    "_UNICODE"
+)
 if("${CMAKE_VS_PLATFORM_NAME}" STREQUAL "x64")
     target_compile_definitions(${PROJECT_NAME} PRIVATE
         "$<$<CONFIG:Debug>:"
@@ -49,9 +73,8 @@ if("${CMAKE_VS_PLATFORM_NAME}" STREQUAL "x64")
         "$<$<CONFIG:Release>:"
             "NDEBUG"
         ">"
-        "_CONSOLE;"
-        "UNICODE;"
-        "_UNICODE"
+        "X64;"
+        "_CONSOLE"
     )
 elseif("${CMAKE_VS_PLATFORM_NAME}" STREQUAL "x86")
     target_compile_definitions(${PROJECT_NAME} PRIVATE
@@ -61,9 +84,8 @@ elseif("${CMAKE_VS_PLATFORM_NAME}" STREQUAL "x86")
         "$<$<CONFIG:Release>:"
             "NDEBUG"
         ">"
-        "_CONSOLE;"
-        "UNICODE;"
-        "_UNICODE"
+        "WIN32;"
+        "_CONSOLE"
     )
 endif()
 
@@ -73,53 +95,45 @@ endif()
 if(MSVC)
     if("${CMAKE_VS_PLATFORM_NAME}" STREQUAL "x64")
         target_compile_options(${PROJECT_NAME} PRIVATE
-            $<$<CONFIG:Release>:
-                /Oi;
-                /Gy
+            $<$<CONFIG:Debug>:
+                /Od;
+                /RTC1;
+                ${DEFAULT_CXX_DEBUG_INFORMATION_FORMAT}
             >
-            /permissive-;
-            /sdl;
+            $<$<CONFIG:Release>:
+                /Zi
+            >
             /W3;
-            ${DEFAULT_CXX_DEBUG_INFORMATION_FORMAT};
-            ${DEFAULT_CXX_EXCEPTION_HANDLING};
-            /Y-
+            ${DEFAULT_CXX_EXCEPTION_HANDLING}
         )
     elseif("${CMAKE_VS_PLATFORM_NAME}" STREQUAL "x86")
         target_compile_options(${PROJECT_NAME} PRIVATE
-            $<$<CONFIG:Release>:
-                /Oi;
-                /Gy
+            $<$<CONFIG:Debug>:
+                /Od;
+                /RTC1;
+                ${DEFAULT_CXX_DEBUG_INFORMATION_FORMAT}
             >
-            /permissive-;
-            /sdl;
+            $<$<CONFIG:Release>:
+                /Zi
+            >
             /W3;
-            ${DEFAULT_CXX_DEBUG_INFORMATION_FORMAT};
-            ${DEFAULT_CXX_EXCEPTION_HANDLING};
-            /Y-
+            ${DEFAULT_CXX_EXCEPTION_HANDLING}
         )
     endif()
     if("${CMAKE_VS_PLATFORM_NAME}" STREQUAL "x64")
         target_link_options(${PROJECT_NAME} PRIVATE
-            $<$<CONFIG:Debug>:
-                /INCREMENTAL
-            >
             $<$<CONFIG:Release>:
                 /OPT:REF;
-                /OPT:ICF;
-                /INCREMENTAL:NO
+                /OPT:ICF
             >
             /DEBUG;
             /SUBSYSTEM:CONSOLE
         )
     elseif("${CMAKE_VS_PLATFORM_NAME}" STREQUAL "x86")
         target_link_options(${PROJECT_NAME} PRIVATE
-            $<$<CONFIG:Debug>:
-                /INCREMENTAL
-            >
             $<$<CONFIG:Release>:
                 /OPT:REF;
-                /OPT:ICF;
-                /INCREMENTAL:NO
+                /OPT:ICF
             >
             /DEBUG;
             /SUBSYSTEM:CONSOLE
@@ -131,10 +145,8 @@ endif()
 # Dependencies
 ################################################################################
 # Link with other targets.
-target_link_libraries(${PROJECT_NAME} PRIVATE
+target_link_libraries(${PROJECT_NAME} PUBLIC
     Core
-    UILibrary
 )
 
-use_package(${PROJECT_NAME} boost 1.78.0)
-use_package(${PROJECT_NAME} boost_locale-vc143 1.78.0)
+use_package(${PROJECT_NAME} Microsoft.googletest.v140.windesktop.msvcstl.dyn.rt-dyn 1.8.1.5)
