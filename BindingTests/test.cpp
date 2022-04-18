@@ -4,7 +4,7 @@
 #include "..\AutomationBinding\AutomationAPI_Session.h"
 
 
-TEST(GUICheck, TestGUIDFunc) {
+TEST(GUIDCheck, TestGUIDFunc) {
 	//AutomationAPI::WireBuilder* obj;
 	//EXPECT_EQ(0, obj->GetOrigin1(0,1,2));
 
