@@ -22,6 +22,6 @@ Refer the Wiki Pages for the FinalProject Documentation
 
 https://github.com/alekhyachalla/SoftwareArchitectureCLassApplication/wiki/FinalProject-PT1
 
-https://github.com/alekhyachalla/SoftwareArchitectureCLassApplication/wiki/FinalProject-PT2-Design-Document/
+https://github.com/alekhyachalla/SoftwareArchitectureCLassApplication/wiki/FinalProject-PT2
 
 
