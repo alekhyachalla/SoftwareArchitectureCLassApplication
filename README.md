@@ -13,3 +13,15 @@ To Resovle this install a Java JDK (such as Adopt OpenJDK), and then provide the
 Or optionally comment out the code in PerformJavaAutomationWorkflow, and turn off building the JavaLoader library.
 
 [Journaling Module Design](documentation_markdown/journaling.md)
+
+
+
+----------------------------------------------------------------------------------------------------------
+
+Refer to the Wiki Pages for the FinalProject Documentation
+
+https://github.com/alekhyachalla/SoftwareArchitectureCLassApplication/wiki/FinalProject-PT1
+
+https://github.com/alekhyachalla/SoftwareArchitectureCLassApplication/wiki/FinalProject-PT2-Design-Document/
+
+
