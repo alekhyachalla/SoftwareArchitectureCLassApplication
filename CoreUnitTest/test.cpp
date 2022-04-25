@@ -1,4 +1,6 @@
-#include "pch.h"
+//#include "pch.h"
+#pragma once
+#include "gtest/gtest.h"
 #include "..\Core\StringUtils.h"
 
 TEST(StringUtilsTests, startsWithNegativeTest)

@@ -1,6 +1,8 @@
-#include "pch.h"
+//#include "pch.h"
+#pragma once
 #include "..\Core\Observer.h"
 #include "..\Core\Core.h"
+#include "gtest/gtest.h"
 
 TEST(Coretests, InitializeProductcheck) {
 
