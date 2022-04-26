@@ -1,0 +1,5 @@
+E:/SAFinal/SoftwareArchitectureCLassApplication/out/build/x64-Debug/CMakeFiles/edit_cache.dir
+E:/SAFinal/SoftwareArchitectureCLassApplication/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir
+E:/SAFinal/SoftwareArchitectureCLassApplication/out/build/x64-Debug/CoreUnitTest/CMakeFiles/executeTests.dir
+E:/SAFinal/SoftwareArchitectureCLassApplication/out/build/x64-Debug/CoreUnitTest/CMakeFiles/edit_cache.dir
+E:/SAFinal/SoftwareArchitectureCLassApplication/out/build/x64-Debug/CoreUnitTest/CMakeFiles/rebuild_cache.dir

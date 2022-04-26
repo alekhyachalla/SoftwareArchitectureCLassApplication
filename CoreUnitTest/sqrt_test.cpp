@@ -2,7 +2,9 @@
 // Created by root on 4/25/22.
 //
 #include "sqrt.cpp"
-#include <gtest/gtest.h>
+//#include <gtest/gtest.h>
+#include "gtest/gtest.h"
+
 
 TEST(SquareRootTest, PositiveNos)
 {
