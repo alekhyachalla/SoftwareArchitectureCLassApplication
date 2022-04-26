@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/root/ClionProjects3/SoftwareArchitectureCLassApplication/CoreUnitTest/test.cpp
+gtest/gtest.h
+/root/ClionProjects3/SoftwareArchitectureCLassApplication/CoreUnitTest/gtest/gtest.h
+

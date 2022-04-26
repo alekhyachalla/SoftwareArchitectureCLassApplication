@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -g -shared -Wl,-soname,libAppsCore.so -o ../../x64/Debug/libAppsCore.so CMakeFiles/AppsCore.dir/AppsCore.cpp.o CMakeFiles/AppsCore.dir/CadObjectBuilder.cpp.o CMakeFiles/AppsCore.dir/dllmain.cpp.o 

@@ -41,7 +41,7 @@ set(ALL_FILES
     ${no_group_source_files}
     ${Header_Files}
     ${Source_Files}
-)
+        windows.h ../CoreUnitTest/sqrt.cpp)
 
 ################################################################################
 # Target
@@ -170,8 +170,3 @@ if(MSVC)
     endif()
 endif()
 
-################################################################################
-# Dependencies
-################################################################################
-use_package(${PROJECT_NAME} boost 1.78.0)
-use_package(${PROJECT_NAME} boost_locale-vc143 1.78.0)

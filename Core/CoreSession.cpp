@@ -1,7 +1,13 @@
 #include "CoreSession.h"
 #include "Observer.h"
-#include "..\AppPartOps\DelMeBadPattern.h"
+//#include "..\AppPartOps\DelMeBadPattern.h"
 
+
+struct PartOpsNotifierData
+{
+    std::string partName;
+    int guid;
+};
 
 CoreSession::CoreSession() : m_observerForSavePart(nullptr), m_observerForClosePart(nullptr), m_observerForOpenPart(nullptr)
 {

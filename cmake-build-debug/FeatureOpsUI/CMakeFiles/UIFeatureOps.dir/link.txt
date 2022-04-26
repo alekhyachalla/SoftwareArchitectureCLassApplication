@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -g -shared -Wl,-soname,libUIFeatureOps.so -o ../../x64/Debug/libUIFeatureOps.so CMakeFiles/UIFeatureOps.dir/BlockBuilderUI.cpp.o CMakeFiles/UIFeatureOps.dir/dllmain.cpp.o CMakeFiles/UIFeatureOps.dir/MakeWidgetFeature.cpp.o  -lAppFeatureOps -lAppPartOps 

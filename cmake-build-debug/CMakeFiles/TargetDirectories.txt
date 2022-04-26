@@ -1,0 +1,5 @@
+/root/ClionProjects3/SoftwareArchitectureCLassApplication/cmake-build-debug/CMakeFiles/edit_cache.dir
+/root/ClionProjects3/SoftwareArchitectureCLassApplication/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/root/ClionProjects3/SoftwareArchitectureCLassApplication/cmake-build-debug/CoreUnitTest/CMakeFiles/executeTests.dir
+/root/ClionProjects3/SoftwareArchitectureCLassApplication/cmake-build-debug/CoreUnitTest/CMakeFiles/edit_cache.dir
+/root/ClionProjects3/SoftwareArchitectureCLassApplication/cmake-build-debug/CoreUnitTest/CMakeFiles/rebuild_cache.dir

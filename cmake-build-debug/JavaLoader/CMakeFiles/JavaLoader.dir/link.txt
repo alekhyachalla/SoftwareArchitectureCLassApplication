@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -g -shared -Wl,-soname,libJavaLoader.so -o ../../x64/Debug/libJavaLoader.so CMakeFiles/JavaLoader.dir/dllmain.cpp.o CMakeFiles/JavaLoader.dir/JavaLoader.cpp.o  -lCore -lkernel32 -luser32 -lgdi32 -lwinspool -lcomdlg32 -ladvapi32 -lshell32 -lole32 -loleaut32 -luuid -lodbc32 -lodbccp32 

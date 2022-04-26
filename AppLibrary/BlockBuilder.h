@@ -1,6 +1,7 @@
 #pragma once
 #include "AppFeaturesOpsExports.h"
 #include "..\Core\GuidObject.h"
+//#include "/root/ClionProjects3/SoftwareArchitectureCLassApplication/Core/GuidObject.h"
 
 // TODO these probably shoudl be in their own file, 
 // but deferring this to when get a generator to handle this for us

@@ -2,6 +2,7 @@
 #pragma once
 #include "gtest/gtest.h"
 #include "..\Core\StringUtils.h"
+//#include "/root/ClionProjects3/SoftwareArchitectureCLassApplication/Core/StringUtils.h"
 
 TEST(StringUtilsTests, startsWithNegativeTest)
 {

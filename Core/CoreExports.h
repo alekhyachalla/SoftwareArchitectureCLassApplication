@@ -6,7 +6,12 @@
 // CORE_API functions as being imported from a DLL, whereas this DLL sees symbols
 // defined with this macro as being exported.
 #ifdef CORE_EXPORTS
+#ifdef _WIN32
 #define CORE_API __declspec(dllexport)
 #else
-#define CORE_API __declspec(dllimport)
+#define CORE_API __attribute__((dllexport))
+#endif
+#else
+//#define CORE_API __declspec(dllimport)
+#define CORE_API __attribute__((dllexport))
 #endif

@@ -1,0 +1,76 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16.0"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "CoreUnitTest",
+					"jsonFile" : "directory-CoreUnitTest-Debug-02413e0ca60b32f46a94.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.6"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "CoreUnitTest",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "SampleApplicationSolution",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "executeTests::@b8a800a53fc20914e230",
+					"jsonFile" : "target-executeTests-Debug-6b6d8b07bc495852d84c.json",
+					"name" : "executeTests",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/root/ClionProjects3/SoftwareArchitectureCLassApplication/cmake-build-debug",
+		"source" : "/root/ClionProjects3/SoftwareArchitectureCLassApplication"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

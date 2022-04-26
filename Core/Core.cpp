@@ -1,7 +1,7 @@
 // Core.cpp : Defines the exported functions for the DLL.
 //
 
-#include "framework.h"
+//#include "framework.h"
 #include "Core.h"
 #include <iostream>
 #include "CoreSession.h"
